@@ -1,0 +1,2254 @@
+          AutoDock 4.2 Release 4.2.6   
+         (C) 1989-2012 The Scripps Research Institute
+        AutoDock comes with ABSOLUTELY NO WARRANTY.
+        AutoDock is free software, and you are welcome
+        to redistribute it under certain conditions;
+        for details type 'autodock4 -C'
+
+                     main.cc  $Revision: 1.213 $
+
+                   Compiled on Jul 18 2014 at 15:34:58
+
+
+This file was created at:			9:15 14" p.m., 12/20/2021
+                   on host:		"DESKTOP-RHKS8OI"
+Current Working Directory = "C:\Users\Asus\DOCKING"
+
+      ________________________________________________________________
+
+                   SETTING UP DEFAULT PARAMETER LIBRARY
+      ________________________________________________________________
+
+
+Random number generator was seeded with values 15804, 1640024114.
+Docking parameter file (DPF) used for this docking:		C:/Users/Asus/DOCKING/result_6.dpf
+DPF> autodock_parameter_version 4.2       # used by autodock to validate parameter set
+
+	Autodock parameter version 4.2.
+DPF> outlev 1                             # diagnostic output level
+
+Output Level = 1  ADT-COMPATIBLE OUTPUT DURING DOCKING.
+DPF> intelec                              # calculate internal electrostatics
+
+Electrostatic energies will be calculated for all non-bonds between moving atoms.
+DPF> seed pid time                        # seeds for random generator
+
+Random number generator was seeded with values 15804, 1640024114.
+DPF> ligand_types A C NA OA N HD          # atoms types in ligand
+
+DPF> fld receptor.maps.fld                # grid_data_file
+
+Opening Grid Map Dimensions file:		receptor.maps.fld
+Grid Point Spacing =				0.525 Angstroms
+
+Even Number of User-specified Grid Points =	40 x-points
+						40 y-points
+						40 z-points
+
+Coordinates of Central Grid Point of Maps =	(44.286, -44.684, 5.787)
+Macromolecule file used to create Grid Maps =	receptor.pdbqt
+Grid Parameter file used to create Grid Maps =	C:/Users/Asus/DOCKING/6.gpf
+Minimum coordinates in grid = (33.786, -55.184, -4.713)
+Maximum coordinates in grid = (54.786, -34.184, 16.287)
+
+DPF> map receptor.A.map                   # atom-specific affinity map
+
+DPF> map receptor.C.map                   # atom-specific affinity map
+
+DPF> map receptor.NA.map                  # atom-specific affinity map
+
+DPF> map receptor.OA.map                  # atom-specific affinity map
+
+DPF> map receptor.N.map                   # atom-specific affinity map
+
+DPF> map receptor.HD.map                  # atom-specific affinity map
+
+DPF> elecmap receptor.e.map               # electrostatics map
+
+DPF> desolvmap receptor.d.map             # desolvation map
+
+DPF> move lig6.pdbqt                      # small molecule
+
+1,4-interactions will be _ignored_ in the non-bonded internal energy calculation.
+
+Ligand PDBQT file = "lig6.pdbqt"
+
+INPUT LIGAND PDBQT FILE:
+________________________
+
+INPUT-LIGAND-PDBQT: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+INPUT-LIGAND-PDBQT: REMARK  7 active torsions:
+INPUT-LIGAND-PDBQT: REMARK  status: ('A' for Active; 'I' for Inactive)
+INPUT-LIGAND-PDBQT: REMARK    1  A    between atoms: _1  and  _5
+INPUT-LIGAND-PDBQT: REMARK    2  A    between atoms: _1  and  _15
+INPUT-LIGAND-PDBQT: REMARK    3  A    between atoms: _5  and  _21
+INPUT-LIGAND-PDBQT: REMARK    4  A    between atoms: _5  and  _28
+INPUT-LIGAND-PDBQT: REMARK    5  A    between atoms: _13  and  _21
+INPUT-LIGAND-PDBQT: REMARK    6  A    between atoms: _17  and  _21
+INPUT-LIGAND-PDBQT: REMARK    7  A    between atoms: _21  and  _22
+INPUT-LIGAND-PDBQT: REMARK                            x       y       z     vdW  Elec       q    Type
+INPUT-LIGAND-PDBQT: REMARK                         _______ _______ _______ _____ _____    ______ ____
+INPUT-LIGAND-PDBQT: ROOT
+INPUT-LIGAND-PDBQT: ATOM      8  C   UNL     1       1.081   0.083  -0.093  0.00  0.00    +0.055 C 
+INPUT-LIGAND-PDBQT: ENDROOT
+INPUT-LIGAND-PDBQT: BRANCH   8  12
+INPUT-LIGAND-PDBQT: ATOM     12  N   UNL     1       0.171  -1.148   0.035  0.00  0.00    +0.384 N 
+INPUT-LIGAND-PDBQT: ATOM     13  C   UNL     1      -0.102  -1.650   1.452  0.00  0.00    -0.092 C 
+INPUT-LIGAND-PDBQT: ATOM     14  C   UNL     1      -1.210  -0.739  -0.493  0.00  0.00    -0.092 C 
+INPUT-LIGAND-PDBQT: ATOM     15  C   UNL     1       0.575  -2.303  -0.887  0.00  0.00    -0.092 C 
+INPUT-LIGAND-PDBQT: ENDBRANCH   8  12
+INPUT-LIGAND-PDBQT: BRANCH   8   9
+INPUT-LIGAND-PDBQT: ATOM      9  C   UNL     1       2.463  -0.271   0.383  0.00  0.00    +0.344 C 
+INPUT-LIGAND-PDBQT: ATOM     10  O   UNL     1       2.476  -1.456   0.754  0.00  0.00    -0.248 OA
+INPUT-LIGAND-PDBQT: ATOM     11  O   UNL     1       3.408   0.546   0.387  0.00  0.00    -0.248 OA
+INPUT-LIGAND-PDBQT: ENDBRANCH   8   9
+INPUT-LIGAND-PDBQT: BRANCH   8   1
+INPUT-LIGAND-PDBQT: ATOM      1  C   UNL     1       0.579   1.357   0.634  0.00  0.00    +0.053 C 
+INPUT-LIGAND-PDBQT: BRANCH   1   2
+INPUT-LIGAND-PDBQT: ATOM      2  C   UNL     1      -0.408   2.226  -0.099  0.00  0.00    +0.058 A 
+INPUT-LIGAND-PDBQT: ATOM      3  N   UNL     1      -1.214   2.993   0.512  0.00  0.00    -0.241 NA
+INPUT-LIGAND-PDBQT: ATOM      4  C   UNL     1      -1.903   3.563  -0.385  0.00  0.00    +0.196 A 
+INPUT-LIGAND-PDBQT: ATOM      5  N   UNL     1      -1.561   3.147  -1.531  0.00  0.00    -0.351 N 
+INPUT-LIGAND-PDBQT: ATOM      6  H   UNL     1      -1.986   3.456  -2.436  0.00  0.00    +0.166 HD
+INPUT-LIGAND-PDBQT: ATOM      7  C   UNL     1      -0.609   2.325  -1.420  0.00  0.00    +0.107 A 
+INPUT-LIGAND-PDBQT: ENDBRANCH   1   2
+INPUT-LIGAND-PDBQT: ENDBRANCH   8   1
+INPUT-LIGAND-PDBQT: TORSDOF 4
+________________________________________________________________________________
+
+Total charge on ligand                               =	-0.001 e
+REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+REMARK  7 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: _1  and  _5
+REMARK    2  A    between atoms: _1  and  _15
+REMARK    3  A    between atoms: _5  and  _21
+REMARK    4  A    between atoms: _5  and  _28
+REMARK    5  A    between atoms: _13  and  _21
+REMARK    6  A    between atoms: _17  and  _21
+REMARK    7  A    between atoms: _21  and  _22
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+
+
+Number of Rotatable Bonds in Small Molecule =	4 torsions
+Number of atoms in ligand:  15
+
+Number of non-hydrogen atoms in ligand:  14
+
+Number of vibrational degrees of freedom of ligand:  39
+
+
+Number of torsional degrees of freedom = 4
+Estimated loss of torsional free energy upon binding = +1.1932 kcal/mol
+
+
+DPF> about 0.117 0.809 -0.212            # small molecule center
+
+Small molecule center of rotation =	(+0.117, +0.809, -0.212)
+
+DPF> tran0 random                         # initial coordinates/A or random
+
+Initial translation =			(54.446, -40.059, 8.038) Angstroms
+DPF> quaternion0 random                   # initial orientation
+
+Each run will begin with a new, random initial orientation.
+Initial quaternion,  (x,y,z,w) =	( 0.650, -0.395, -0.507, 0.406 ),
+DPF> dihe0 random                         # initial dihedrals (relative) or random
+
+DPF> torsdof 4                            # torsional degrees of freedom
+
+Number of torsional degrees of freedom = 4
+Free energy coefficient for torsional degrees of freedom = 0.2983, the factory default value.
+
+Estimated loss of torsional free energy upon binding = +1.1932 kcal/mol
+
+DPF> rmstol 2.0                           # cluster_tolerance/A
+
+Maximum RMS tolerance for conformational cluster analysis = 2.00 Angstroms
+DPF> extnrg 1000.0                        # external grid energy
+
+External grid energy (beyond grid map walls) = 1000.00
+
+DPF> e0max 0.0 10000                      # max initial energy; max number of retries
+
+Using user-specified maximum number of retries for simanneal initialization, 10000 retries.
+If the simanneal initial energy is greater than e0max, 0.000,
+then a new, random initial state will be created.
+
+DPF> ga_pop_size 200                      # number of individuals in population
+
+A population of 200 individuals will be used
+DPF> ga_num_evals 2500000                 # maximum number of energy evaluations
+
+There will be at most 2500000 function evaluations used.
+DPF> ga_num_generations 27000             # maximum number of generations
+
+The GA will run for at most 27000 generations.
+DPF> ga_elitism 1                         # number of top individuals to survive to next generation
+
+The 1 best will be preserved each GA generation.
+DPF> ga_mutation_rate 0.02                # rate of gene mutation
+
+The mutation rate is 0.020000.
+DPF> ga_crossover_rate 0.8                # rate of crossover
+
+The crossover rate is 0.800000.
+DPF> ga_window_size 10                    # 
+
+The GA's selection window is 10 generations.
+DPF> ga_cauchy_alpha 0.0                  # Alpha parameter of Cauchy distribution
+
+The alpha parameter (for the Cauchy distribution) is being set to 0.000000.
+DPF> ga_cauchy_beta 1.0                   # Beta parameter Cauchy distribution
+
+The beta parameter (for the Cauchy distribution) is being set to 1.000000.
+DPF> set_ga                               # set the above parameters for GA or LGA
+
+DPF> sw_max_its 300                       # iterations of Solis & Wets local search
+
+Solis & Wets algorithms will perform at most 300 iterations.
+DPF> sw_max_succ 4                        # consecutive successes before changing rho
+
+Solis & Wets algorithms expand rho every 4 in a row successes.
+DPF> sw_max_fail 4                        # consecutive failures before changing rho
+
+Solis & Wets algorithms contract rho every 4 in a row failures.
+DPF> sw_rho 1.0                           # size of local search space to sample
+
+rho is set to 1.000000.
+DPF> sw_lb_rho 0.01                       # lower bound on rho
+
+rho will never get smaller than 0.010000.
+DPF> ls_search_freq 0.06                  # probability of performing local search on individual
+
+Local search will be performed with frequency 0.060000.
+DPF> set_psw1                             # set the above pseudo-Solis & Wets parameters
+
+Creating a new Local Search object using the pseudo-Solis-Wets algorithm (pSW1) with the current settings.
+
+DPF> unbound_model bound                  # state of unbound ligand
+
+DPF> ga_run 20                            # do this many hybrid GA-LS runs
+
+centering ligand on specified point: 0.117 0.809 -0.212
+Furthest true ligand atom from "about" center is 4.047 Angstroms (maxrad).
+Number of requested GA dockings = 20 runs
+Unbound model to be used is 'same as bound' [AutoDock 4.2 default].
+
+	BEGINNING GENETIC ALGORITHM DOCKING 1 of 20
+Run: 1 Seed: 2055516895 677873397 [ Run 1 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.715
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 39.311 -45.563 2.719 quatxyzw 0.801534 -0.079733 -0.202549 -0.556920 center 0.117 0.809 -0.212 ntor 4 108.9482 38.6721 -120.1226 -62.1240
+State:	 39.311 -45.563   2.719   0.965 -0.096 -0.244 -112.314    108.95   38.67 -120.12  -62.12
+
+DOCKED: MODEL        1
+DOCKED: USER    Run = 1
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.09 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =    1.01 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.28 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.92 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.37 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.43 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.43 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 39.310643 -45.562788 2.719444
+DOCKED: USER    NEWDPF quaternion0 0.801534 -0.079733 -0.202549 -0.556920
+DOCKED: USER    NEWDPF axisangle0 0.965045 -0.095998 -0.243869 -112.313945
+DOCKED: USER    NEWDPF quat0 0.965045 -0.095998 -0.243869 -112.313945
+DOCKED: USER    NEWDPF dihe0 108.95 38.67 -120.12 -62.12 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.063 -45.739   1.785 -0.31 +0.08    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      39.066 -45.076   0.823 -0.05 +0.45    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      37.691 -45.732   0.706 -0.21 -0.09    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      38.771 -43.678   1.380 -0.08 -0.10    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      39.655 -44.789  -0.562 -0.28 -0.11    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.083 -46.508   0.990 -0.32 +0.62    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.173 -45.915   1.043 -0.69 -0.67    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      40.812 -47.567   0.385 -0.39 -0.39    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      39.433 -46.655   2.866 -0.34 +0.07    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      40.109 -46.703   4.210 -0.37 +0.08    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      40.665 -45.683   4.721 -0.40 -0.45    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      41.141 -46.063   5.831 -0.37 +0.29    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      40.917 -47.297   6.005 -0.29 -0.37    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.218 -47.852   6.839 -0.39 +0.10    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      40.250 -47.750   5.033 -0.43 +0.12    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 2 of 20
+Run: 2 Seed: 2112725254 1546746788 [ Run 2 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.813
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 40.297 -45.831 1.593 quatxyzw -0.932732 -0.223732 -0.015208 0.282353 center 0.117 0.809 -0.212 ntor 4 -121.6119 -32.3958 -161.1435 -30.2133
+State:	 40.297 -45.831   1.593  -0.972 -0.233 -0.016 147.199   -121.61  -32.40 -161.14  -30.21
+
+DOCKED: MODEL        2
+DOCKED: USER    Run = 2
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.19 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  853.88 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.38 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.18 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.20 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.43 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.43 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 40.297190 -45.830659 1.593217
+DOCKED: USER    NEWDPF quaternion0 -0.932732 -0.223732 -0.015208 0.282353
+DOCKED: USER    NEWDPF axisangle0 -0.972294 -0.233222 -0.015853 147.198592
+DOCKED: USER    NEWDPF quat0 -0.972294 -0.233222 -0.015853 147.198592
+DOCKED: USER    NEWDPF dihe0 -121.61 -32.40 -161.14 -30.21 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.886 -44.944   1.011 -0.30 +0.10    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      39.584 -44.487   0.336 -0.04 +0.47    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      39.640 -44.266  -1.175 -0.25 -0.11    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      38.567 -45.621   0.514 -0.25 -0.10    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      38.918 -43.300   1.039 -0.08 -0.09    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      42.058 -44.341   0.287 -0.18 +0.68    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.800 -45.251  -0.117 -0.47 -0.53    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      42.209 -43.108   0.152 -0.76 -0.41    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      41.068 -46.479   1.130 -0.54 +0.10    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      41.080 -47.068   2.515 -0.48 +0.11    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      41.057 -46.342   3.556 -0.62 -0.59    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      41.090 -47.139   4.540 -0.30 +0.33    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      41.161 -48.336   4.133 -0.27 -0.42    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.210 -49.180   4.749 -0.28 +0.13    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      41.132 -48.359   2.870 -0.36 +0.13    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 3 of 20
+Run: 3 Seed: 1303957993 723533761 [ Run 3 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.914
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 40.160 -45.549 0.956 quatxyzw 0.907938 0.246694 0.276820 -0.195348 center 0.117 0.809 -0.212 ntor 4 136.5331 5.9220 -177.8027 -46.7825
+State:	 40.160 -45.549   0.956   0.926  0.252  0.282 -157.470    136.53    5.92 -177.80  -46.78
+
+DOCKED: MODEL        3
+DOCKED: USER    Run = 3
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.33 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  670.05 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.52 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.19 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.33 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.39 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.39 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 40.160314 -45.548749 0.956407
+DOCKED: USER    NEWDPF quaternion0 0.907938 0.246694 0.276820 -0.195348
+DOCKED: USER    NEWDPF axisangle0 0.925774 0.251541 0.282258 -157.469852
+DOCKED: USER    NEWDPF quat0 0.925774 0.251541 0.282258 -157.469852
+DOCKED: USER    NEWDPF dihe0 136.53 5.92 -177.80 -46.78 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.684 -44.456   0.900 -0.25 +0.09    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      39.682 -44.003  -0.173 -0.04 +0.46    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      40.110 -44.192  -1.628 -0.26 -0.12    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      38.439 -44.890  -0.027 -0.24 -0.10    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      39.139 -42.590   0.059 -0.09 -0.09    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.851 -43.508   0.921 -0.12 +0.65    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.139 -43.241   2.099 -0.62 -0.64    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      42.398 -43.084  -0.119 -0.76 -0.40    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      41.188 -45.916   0.762 -0.47 +0.10    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      41.146 -46.780   1.994 -0.48 +0.11    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      41.129 -46.286   3.163 -0.57 -0.61    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      41.108 -47.271   3.959 -0.31 +0.35    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      41.139 -48.358   3.312 -0.31 -0.44    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.141 -49.314   3.738 -0.22 +0.16    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      41.138 -48.117   2.072 -0.45 +0.14    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 4 of 20
+Run: 4 Seed: 905197276 1841191555 [ Run 4 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.787
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 40.261 -45.524 0.688 quatxyzw 0.873856 0.286266 0.348343 -0.181889 center 0.117 0.809 -0.212 ntor 4 144.2973 8.3727 -179.8788 -43.3728
+State:	 40.261 -45.524   0.688   0.889  0.291  0.354 -159.040    144.30    8.37 -179.88  -43.37
+
+DOCKED: MODEL        4
+DOCKED: USER    Run = 4
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.20 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  829.27 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.40 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.13 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.27 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.39 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.39 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 40.260625 -45.523802 0.688245
+DOCKED: USER    NEWDPF quaternion0 0.873856 0.286266 0.348343 -0.181889
+DOCKED: USER    NEWDPF axisangle0 0.888680 0.291122 0.354252 -159.040400
+DOCKED: USER    NEWDPF quat0 0.888680 0.291122 0.354252 -159.040400
+DOCKED: USER    NEWDPF dihe0 144.30 8.37 -179.88 -43.37 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.646 -44.374   0.717 -0.25 +0.09    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      39.738 -44.012  -0.468 -0.05 +0.46    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      40.345 -44.157  -1.862 -0.26 -0.12    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      38.573 -45.011  -0.458 -0.28 -0.10    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      39.043 -42.656  -0.310 -0.10 -0.09    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.674 -43.292   0.902 -0.12 +0.60    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      41.892 -43.139   2.115 -0.65 -0.57    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      42.186 -42.673  -0.055 -0.75 -0.40    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      41.343 -45.756   0.620 -0.46 +0.10    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      41.190 -46.690   1.792 -0.46 +0.11    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      40.943 -46.266   2.963 -0.49 -0.55    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      40.890 -47.293   3.702 -0.34 +0.33    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      41.125 -48.335   3.023 -0.32 -0.45    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.149 -49.310   3.403 -0.32 +0.17    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      41.295 -48.025   1.811 -0.28 +0.15    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 5 of 20
+Run: 5 Seed: 223198687 1031129936 [ Run 5 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.637
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 39.375 -45.004 0.397 quatxyzw -0.903634 0.020216 -0.250582 0.346765 center 0.117 0.809 -0.212 ntor 4 63.4890 -26.6194 -103.9914 -99.4203
+State:	 39.375 -45.004   0.397  -0.963  0.022 -0.267 139.421     63.49  -26.62 -103.99  -99.42
+
+DOCKED: MODEL        5
+DOCKED: USER    Run = 5
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.04 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =    1.10 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.23 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.27 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.41 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.41 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 39.374507 -45.003941 0.396835
+DOCKED: USER    NEWDPF quaternion0 -0.903634 0.020216 -0.250582 0.346765
+DOCKED: USER    NEWDPF axisangle0 -0.963412 0.021554 -0.267158 139.420840
+DOCKED: USER    NEWDPF quat0 -0.963412 0.021554 -0.267158 139.420840
+DOCKED: USER    NEWDPF dihe0 63.49 -26.62 -103.99 -99.42 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.422 -44.397   0.324 -0.25 +0.08    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      39.942 -43.669  -0.941 -0.06 +0.45    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      40.846 -43.767  -2.169 -0.29 -0.12    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      38.637 -44.347  -1.378 -0.22 -0.10    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      39.519 -42.219  -0.687 -0.13 -0.09    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.912 -44.241   0.449 -0.16 +0.67    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.187 -43.039   0.590 -0.67 -0.43    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      42.700 -45.210   0.403 -0.57 -0.62    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      40.034 -45.895   0.414 -0.38 +0.08    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      40.553 -46.672   1.595 -0.44 +0.09    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      40.405 -46.263   2.787 -0.30 -0.43    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      40.960 -47.130   3.526 -0.27 +0.36    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      41.469 -48.048   2.818 -0.27 -0.52    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.992 -48.876   3.188 -0.48 +0.15    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      41.225 -47.831   1.598 -0.48 +0.15    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 6 of 20
+Run: 6 Seed: 2044411810 1377643498 [ Run 6 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.747
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 39.265 -45.719 2.750 quatxyzw 0.855879 -0.086616 -0.167374 -0.481616 center 0.117 0.809 -0.212 ntor 4 90.1432 -50.7501 -171.9276 -64.0682
+State:	 39.265 -45.719   2.750   0.977 -0.099 -0.191 -122.418     90.14  -50.75 -171.93  -64.07
+
+DOCKED: MODEL        6
+DOCKED: USER    Run = 6
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.12 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  953.14 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.31 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.96 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.36 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.43 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.43 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 39.265061 -45.719071 2.749943
+DOCKED: USER    NEWDPF quaternion0 0.855879 -0.086616 -0.167374 -0.481616
+DOCKED: USER    NEWDPF axisangle0 0.976605 -0.098834 -0.190983 -122.418016
+DOCKED: USER    NEWDPF quat0 0.976605 -0.098834 -0.190983 -122.418016
+DOCKED: USER    NEWDPF dihe0 90.14 -50.75 -171.93 -64.07 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.107 -45.734   1.877 -0.31 +0.09    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      39.199 -44.912   0.950 -0.04 +0.46    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      39.355 -45.157  -0.550 -0.29 -0.11    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      37.755 -45.334   1.252 -0.18 -0.09    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      39.203 -43.413   1.264 -0.09 -0.10    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.210 -46.356   1.066 -0.31 +0.66    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.176 -45.576   1.024 -0.71 -0.70    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      41.109 -47.482   0.536 -0.45 -0.40    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      39.388 -46.821   2.718 -0.35 +0.06    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      39.959 -47.132   4.076 -0.39 +0.07    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      41.133 -46.784   4.409 -0.82 -0.48    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      41.301 -47.207   5.591 -0.34 +0.25    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      40.271 -47.829   5.985 -0.25 -0.32    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      40.162 -48.282   6.922 -0.07 +0.13    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      39.383 -47.795   5.088 -0.35 +0.10    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 7 of 20
+Run: 7 Seed: 1232563224 1281963395 [ Run 7 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.734
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 40.016 -45.882 1.374 quatxyzw -0.915755 -0.259969 -0.162211 0.259800 center 0.117 0.809 -0.212 ntor 4 -128.7012 -24.5584 -168.8711 -42.9617
+State:	 40.016 -45.882   1.374  -0.948 -0.269 -0.168 149.884   -128.70  -24.56 -168.87  -42.96
+
+DOCKED: MODEL        7
+DOCKED: USER    Run = 7
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.11 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  967.59 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.31 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.01 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.29 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.43 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.43 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 40.016405 -45.881772 1.373817
+DOCKED: USER    NEWDPF quaternion0 -0.915755 -0.259969 -0.162211 0.259800
+DOCKED: USER    NEWDPF axisangle0 -0.948318 -0.269213 -0.167979 149.883570
+DOCKED: USER    NEWDPF quat0 -0.948318 -0.269213 -0.167979 149.883570
+DOCKED: USER    NEWDPF dihe0 -128.70 -24.56 -168.87 -42.96 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.566 -44.858   1.027 -0.28 +0.09    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      39.400 -44.520   0.086 -0.06 +0.46    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      39.752 -44.302  -1.385 -0.24 -0.11    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      38.468 -45.738   0.074 -0.27 -0.10    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      38.503 -43.393   0.608 -0.08 -0.09    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.756 -44.012   0.666 -0.13 +0.66    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.751 -44.742   0.531 -0.56 -0.62    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      41.691 -42.770   0.542 -0.63 -0.39    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      40.972 -46.354   1.068 -0.51 +0.10    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      41.041 -47.013   2.420 -0.48 +0.11    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      41.031 -46.342   3.498 -0.61 -0.58    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      41.113 -47.187   4.437 -0.30 +0.33    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      41.202 -48.359   3.966 -0.26 -0.42    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.291 -49.233   4.536 -0.22 +0.14    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      41.136 -48.318   2.706 -0.40 +0.14    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 8 of 20
+Run: 8 Seed: 179579892 1656704572 [ Run 8 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.753
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 39.051 -45.864 2.589 quatxyzw -0.863822 0.029572 0.089042 0.494983 center 0.117 0.809 -0.212 ntor 4 -91.7514 57.2595 180.0000 -68.9293
+State:	 39.051 -45.864   2.589  -0.994  0.034  0.102 120.663    -91.75   57.26  180.00  -68.93
+
+DOCKED: MODEL        8
+DOCKED: USER    Run = 8
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.14 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  919.90 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.34 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.98 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.35 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.42 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.42 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 39.051441 -45.864035 2.589203
+DOCKED: USER    NEWDPF quaternion0 -0.863822 0.029572 0.089042 0.494983
+DOCKED: USER    NEWDPF axisangle0 -0.994153 0.034034 0.102476 120.662755
+DOCKED: USER    NEWDPF quat0 -0.994153 0.034034 0.102476 120.662755
+DOCKED: USER    NEWDPF dihe0 -91.75 57.26 180.00 -68.93 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      39.950 -45.730   1.786 -0.30 +0.08    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      38.987 -45.087   0.777 -0.06 +0.44    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      37.605 -45.726   0.650 -0.21 -0.09    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      38.701 -43.665   1.277 -0.08 -0.09    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      39.613 -44.858  -0.603 -0.27 -0.11    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.207 -46.147   1.074 -0.29 +0.67    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      41.093 -47.326   0.701 -0.48 -0.40    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      42.184 -45.384   0.920 -0.72 -0.68    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      39.371 -46.926   2.585 -0.34 +0.06    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      39.957 -47.195   3.945 -0.39 +0.07    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      41.132 -46.830   4.257 -0.83 -0.49    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      41.315 -47.217   5.448 -0.32 +0.27    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      40.294 -47.835   5.870 -0.26 -0.32    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      40.198 -48.263   6.820 -0.08 +0.12    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      39.397 -47.833   4.982 -0.34 +0.11    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 9 of 20
+Run: 9 Seed: 557340318 1147644688 [ Run 9 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.496
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 45.230 -41.682 1.610 quatxyzw 0.112835 0.429348 -0.848564 -0.287869 center 0.117 0.809 -0.212 ntor 4 173.3094 -123.1458 -162.7794 6.4606
+State:	 45.230 -41.682   1.610   0.118  0.448 -0.886 -146.539    173.31 -123.15 -162.78    6.46
+
+DOCKED: MODEL        9
+DOCKED: USER    Run = 9
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.33 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  674.00 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.52 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.47 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.04 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   +0.02 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   +0.02 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 45.230182 -41.682006 1.609662
+DOCKED: USER    NEWDPF quaternion0 0.112835 0.429348 -0.848564 -0.287869
+DOCKED: USER    NEWDPF axisangle0 0.117822 0.448326 -0.886071 -146.539202
+DOCKED: USER    NEWDPF quat0 0.117822 0.448326 -0.886071 -146.539202
+DOCKED: USER    NEWDPF dihe0 173.31 -123.15 -162.78 6.46 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      44.032 -41.816   1.741 -0.35 +0.07    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      44.055 -40.988   3.034 -0.20 +0.37    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      42.922 -39.979   3.218 -0.30 -0.07    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      43.875 -41.972   4.197 -0.22 -0.15    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      45.415 -40.344   3.322 -0.35 -0.02    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      42.734 -42.570   1.658 -0.10 +0.66    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.653 -43.123   0.549 -0.62 -0.45    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      41.903 -42.593   2.590 -0.72 -0.50    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      45.224 -42.789   1.556 -0.39 +0.08    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      46.535 -42.198   1.109 -0.49 +0.04    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      46.641 -40.983   0.757 -0.27 -0.07    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      47.854 -40.817   0.433 -0.36 +0.03    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      48.492 -41.904   0.551 -0.26 -0.09    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      49.508 -42.034   0.335 -0.32 -0.02    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      47.725 -42.803   0.996 -0.53 +0.08    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 10 of 20
+Run: 10 Seed: 1968116610 747735517 [ Run 10 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.728
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 38.807 -46.158 2.369 quatxyzw -0.400732 0.223975 -0.206502 -0.864064 center 0.117 0.809 -0.212 ntor 4 115.2829 -59.1924 121.9075 -92.0064
+State:	 38.807 -46.158   2.369  -0.796  0.445 -0.410 -60.448    115.28  -59.19  121.91  -92.01
+
+DOCKED: MODEL       10
+DOCKED: USER    Run = 10
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.17 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  871.11 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.37 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.07 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.30 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.36 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.36 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 38.807489 -46.157989 2.368639
+DOCKED: USER    NEWDPF quaternion0 -0.400732 0.223975 -0.206502 -0.864064
+DOCKED: USER    NEWDPF axisangle0 -0.796078 0.444940 -0.410229 -60.448107
+DOCKED: USER    NEWDPF quat0 -0.796078 0.444940 -0.410229 -60.448107
+DOCKED: USER    NEWDPF dihe0 115.28 -59.19 121.91 -92.01 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      39.530 -47.035   2.794 -0.38 +0.07    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      38.641 -47.200   4.036 -0.11 +0.38    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      39.293 -47.839   5.261 -0.43 -0.09    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      38.260 -45.790   4.504 -0.24 -0.09    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      37.287 -47.851   3.734 -0.32 -0.08    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      40.855 -47.700   3.041 -0.36 +0.51    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      40.982 -48.659   2.262 -0.51 -0.28    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      41.658 -47.307   3.913 -0.87 -0.52    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      39.748 -45.573   2.326 -0.26 +0.08    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      40.540 -45.364   1.062 -0.29 +0.10    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      41.809 -45.357   1.055 -0.71 -0.61    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      42.152 -45.147  -0.146 -0.30 +0.39    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      41.127 -44.998  -0.875 -0.13 -0.56    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.141 -44.804  -1.903 +0.09 +0.27    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      40.083 -45.149  -0.180 -0.26 +0.15    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 11 of 20
+Run: 11 Seed: 1389726268 1131192105 [ Run 11 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.828
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 40.148 -45.899 1.666 quatxyzw -0.925155 -0.236212 -0.042540 0.294079 center 0.117 0.809 -0.212 ntor 4 -133.9908 -24.5001 -159.3800 -33.0027
+State:	 40.148 -45.899   1.666  -0.968 -0.247 -0.045 145.795   -133.99  -24.50 -159.38  -33.00
+
+DOCKED: MODEL       11
+DOCKED: USER    Run = 11
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.21 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  820.13 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.40 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.15 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.25 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.42 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.42 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 40.148066 -45.898590 1.665533
+DOCKED: USER    NEWDPF quaternion0 -0.925155 -0.236212 -0.042540 0.294079
+DOCKED: USER    NEWDPF axisangle0 -0.967957 -0.247140 -0.044508 145.795369
+DOCKED: USER    NEWDPF quat0 -0.967957 -0.247140 -0.044508 145.795369
+DOCKED: USER    NEWDPF dihe0 -133.99 -24.50 -159.38 -33.00 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.728 -44.996   1.100 -0.30 +0.10    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      39.443 -44.603   0.355 -0.05 +0.46    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      39.519 -44.582  -1.171 -0.25 -0.11    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      38.399 -45.682   0.666 -0.24 -0.10    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      38.797 -43.320   0.889 -0.08 -0.09    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.908 -44.354   0.425 -0.16 +0.68    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.813 -45.195   0.297 -0.52 -0.60    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      41.919 -43.154   0.077 -0.71 -0.40    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      40.967 -46.521   1.250 -0.53 +0.10    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      40.999 -47.079   2.648 -0.47 +0.11    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      40.914 -46.335   3.673 -0.62 -0.55    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      40.986 -47.108   4.674 -0.33 +0.31    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      41.140 -48.306   4.292 -0.27 -0.41    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.237 -49.133   4.926 -0.30 +0.12    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      41.131 -48.357   3.031 -0.35 +0.14    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 12 of 20
+Run: 12 Seed: 476985523 983042317 [ Run 12 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.479
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 39.918 -44.727 2.037 quatxyzw -0.718182 0.247905 0.253716 0.598653 center 0.117 0.809 -0.212 ntor 4 97.6315 14.5866 -55.0987 -100.3501
+State:	 39.918 -44.727   2.037  -0.897  0.309  0.317 106.453     97.63   14.59  -55.10 -100.35
+
+DOCKED: MODEL       12
+DOCKED: USER    Run = 12
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -3.88 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =    1.43 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.07 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.89 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.19 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.41 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.41 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 39.918324 -44.726783 2.037112
+DOCKED: USER    NEWDPF quaternion0 -0.718182 0.247905 0.253716 0.598653
+DOCKED: USER    NEWDPF axisangle0 -0.896598 0.309491 0.316746 106.453019
+DOCKED: USER    NEWDPF quat0 -0.896598 0.309491 0.316746 106.453019
+DOCKED: USER    NEWDPF dihe0 97.63 14.59 -55.10 -100.35 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.599 -45.334   1.238 -0.33 +0.09    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      39.898 -44.630   0.066 -0.07 +0.50    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      38.579 -45.240  -0.405 -0.30 -0.10    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      39.512 -43.228   0.554 -0.11 -0.10    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      40.826 -44.349  -1.120 -0.29 -0.13    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.337 -46.538   0.722 -0.29 +0.65    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.530 -46.241   0.544 -0.57 -0.59    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      40.780 -47.638   0.517 -0.42 -0.36    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      39.676 -45.741   2.415 -0.27 +0.08    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      40.297 -46.526   3.539 -0.33 +0.10    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      40.645 -45.980   4.631 -0.47 -0.44    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      41.137 -46.904   5.344 -0.40 +0.29    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      41.126 -48.000   4.710 -0.30 -0.43    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.486 -48.912   5.075 -0.29 +0.11    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      40.587 -47.834   3.580 -0.45 +0.14    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 13 of 20
+Run: 13 Seed: 1781518569 1391221240 [ Run 13 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.379
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 40.045 -48.165 3.029 quatxyzw 0.751938 0.185815 0.473151 0.419751 center 0.117 0.809 -0.212 ntor 4 -90.0807 111.9169 -85.9908 98.1635
+State:	 40.045 -48.165   3.029   0.828  0.205  0.521 130.362    -90.08  111.92  -85.99   98.16
+
+DOCKED: MODEL       13
+DOCKED: USER    Run = 13
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -3.98 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =    1.20 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.18 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.81 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.37 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.20 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.20 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 40.045296 -48.165391 3.029484
+DOCKED: USER    NEWDPF quaternion0 0.751938 0.185815 0.473151 0.419751
+DOCKED: USER    NEWDPF axisangle0 0.828454 0.204724 0.521298 130.362249
+DOCKED: USER    NEWDPF quat0 0.828454 0.204724 0.521298 130.362249
+DOCKED: USER    NEWDPF dihe0 -90.08 111.92 -85.99 98.16 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.086 -47.763   4.173 -0.46 +0.06    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      38.884 -46.840   3.918 -0.09 +0.41    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      38.097 -47.085   2.632 -0.15 -0.09    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      37.871 -47.108   5.038 -0.28 -0.08    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      39.212 -45.353   4.085 -0.22 -0.11    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      40.779 -47.337   5.438 -0.35 +0.41    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      41.660 -46.507   5.161 -0.63 -0.53    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      40.474 -47.789   6.562 -0.29 -0.20    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      41.109 -47.854   3.012 -0.64 +0.08    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      41.011 -46.820   1.922 -0.48 +0.11    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      41.303 -45.601   2.122 -0.54 -0.65    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      41.102 -45.007   1.022 -0.20 +0.38    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      40.667 -45.823   0.157 -0.20 -0.57    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      40.414 -45.579  -0.829 +0.09 +0.26    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      40.612 -46.983   0.653 -0.38 +0.17    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 14 of 20
+Run: 14 Seed: 1102242940 1950350675 [ Run 14 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.705
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 39.391 -45.959 2.795 quatxyzw -0.877950 0.030614 0.187993 0.439233 center 0.117 0.809 -0.212 ntor 4 94.0789 -40.7773 175.9147 -47.5929
+State:	 39.391 -45.959   2.795  -0.977  0.034  0.209 127.890     94.08  -40.78  175.91  -47.59
+
+DOCKED: MODEL       14
+DOCKED: USER    Run = 14
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.10 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  987.12 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.29 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.91 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.38 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.41 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.41 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 39.391450 -45.958581 2.795191
+DOCKED: USER    NEWDPF quaternion0 -0.877950 0.030614 0.187993 0.439233
+DOCKED: USER    NEWDPF axisangle0 -0.977266 0.034077 0.209259 127.890038
+DOCKED: USER    NEWDPF quat0 -0.977266 0.034077 0.209259 127.890038
+DOCKED: USER    NEWDPF dihe0 94.08 -40.78 175.91 -47.59 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.162 -45.815   1.870 -0.33 +0.09    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      39.135 -44.960   1.113 -0.03 +0.45    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      39.029 -45.196  -0.393 -0.30 -0.11    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      37.751 -45.341   1.653 -0.16 -0.09    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      39.239 -43.464   1.427 -0.09 -0.10    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.235 -46.263   0.915 -0.30 +0.66    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.180 -45.459   0.957 -0.71 -0.68    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      41.129 -47.289   0.211 -0.41 -0.45    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      39.579 -47.038   2.624 -0.38 +0.07    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      40.008 -47.235   4.054 -0.41 +0.07    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      41.136 -46.839   4.480 -0.81 -0.46    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      41.184 -47.168   5.702 -0.40 +0.24    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      40.126 -47.780   6.033 -0.24 -0.32    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      39.925 -48.164   6.986 +0.01 +0.14    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      39.337 -47.832   5.049 -0.35 +0.10    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 15 of 20
+Run: 15 Seed: 1213961074 4936365 [ Run 15 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.581
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 38.893 -44.598 1.709 quatxyzw 0.741072 -0.072565 0.080761 -0.662589 center 0.117 0.809 -0.212 ntor 4 119.3917 42.6272 -56.4985 -147.9524
+State:	 38.893 -44.598   1.709   0.989 -0.097  0.108 -97.005    119.39   42.63  -56.50 -147.95
+
+DOCKED: MODEL       15
+DOCKED: USER    Run = 15
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.01 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =    1.16 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.20 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.80 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.40 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.38 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.38 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 38.892581 -44.598030 1.709129
+DOCKED: USER    NEWDPF quaternion0 0.741072 -0.072565 0.080761 -0.662589
+DOCKED: USER    NEWDPF axisangle0 0.989438 -0.096885 0.107827 -97.004677
+DOCKED: USER    NEWDPF quat0 0.989438 -0.096885 0.107827 -97.004677
+DOCKED: USER    NEWDPF dihe0 119.39 42.63 -56.50 -147.95 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      39.992 -44.636   1.200 -0.21 +0.08    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      39.371 -44.625  -0.205 -0.08 +0.45    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      38.365 -45.733  -0.514 -0.30 -0.10    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      38.555 -43.332  -0.323 -0.12 -0.09    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      40.405 -44.496  -1.328 -0.26 -0.13    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.429 -45.070   1.103 -0.06 +0.76    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.161 -44.157   1.519 -0.60 -0.73    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      41.771 -46.186   0.657 -0.57 -0.53    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      39.246 -45.500   2.248 -0.22 +0.07    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      40.059 -46.509   3.016 -0.32 +0.09    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      40.489 -46.277   4.187 -0.53 -0.43    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      41.136 -47.309   4.534 -0.36 +0.31    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      41.138 -48.160   3.596 -0.31 -0.47    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.612 -49.092   3.629 -0.41 +0.15    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      40.457 -47.727   2.625 -0.45 +0.14    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 16 of 20
+Run: 16 Seed: 591900581 713029747 [ Run 16 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.712
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 39.022 -44.995 1.417 quatxyzw 0.873971 -0.072725 0.154734 -0.454910 center 0.117 0.809 -0.212 ntor 4 95.6340 -52.0927 -98.9469 -114.8572
+State:	 39.022 -44.995   1.417   0.981 -0.082  0.174 -125.882     95.63  -52.09  -98.95 -114.86
+
+DOCKED: MODEL       16
+DOCKED: USER    Run = 16
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.04 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =    1.09 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.23 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.87 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.36 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.48 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.48 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 39.021883 -44.995382 1.417227
+DOCKED: USER    NEWDPF quaternion0 0.873971 -0.072725 0.154734 -0.454910
+DOCKED: USER    NEWDPF axisangle0 0.981397 -0.081664 0.173753 -125.881740
+DOCKED: USER    NEWDPF quat0 0.981397 -0.081664 0.173753 -125.881740
+DOCKED: USER    NEWDPF dihe0 95.63 -52.09 -98.95 -114.86 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.148 -44.662   1.117 -0.23 +0.08    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      39.647 -44.070  -0.210 -0.04 +0.45    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      40.637 -44.072  -1.374 -0.28 -0.12    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      38.497 -44.964  -0.690 -0.28 -0.10    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      38.988 -42.696  -0.054 -0.09 -0.09    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.642 -44.828   1.052 -0.07 +0.79    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.186 -43.835   1.561 -0.58 -0.67    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      42.190 -45.830   0.546 -0.71 -0.58    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      39.483 -45.996   1.541 -0.30 +0.07    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      40.208 -46.836   2.558 -0.38 +0.09    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      40.535 -46.381   3.697 -0.54 -0.45    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      41.133 -47.326   4.293 -0.34 +0.33    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      41.206 -48.342   3.541 -0.27 -0.44    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.661 -49.249   3.796 -0.40 +0.14    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      40.621 -48.106   2.447 -0.38 +0.14    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 17 of 20
+Run: 17 Seed: 2044244514 379905135 [ Run 17 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.807
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 40.168 -45.476 0.208 quatxyzw 0.849516 0.199555 0.439067 -0.213823 center 0.117 0.809 -0.212 ntor 4 149.3188 15.0921 -146.6621 -65.8875
+State:	 40.168 -45.476   0.208   0.870  0.204  0.449 -155.307    149.32   15.09 -146.66  -65.89
+
+DOCKED: MODEL       17
+DOCKED: USER    Run = 17
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.22 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  804.96 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.41 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.16 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.25 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.39 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.39 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 40.168208 -45.475695 0.207584
+DOCKED: USER    NEWDPF quaternion0 0.849516 0.199555 0.439067 -0.213823
+DOCKED: USER    NEWDPF axisangle0 0.869629 0.204280 0.449462 -155.306991
+DOCKED: USER    NEWDPF quat0 0.869629 0.204280 0.449462 -155.306991
+DOCKED: USER    NEWDPF dihe0 149.32 15.09 -146.66 -65.89 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.673 -44.388   0.391 -0.26 +0.08    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      40.106 -43.872  -0.940 -0.07 +0.47    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      40.918 -44.188  -2.195 -0.29 -0.13    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      38.769 -44.588  -1.164 -0.25 -0.10    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      39.713 -42.391  -0.901 -0.14 -0.09    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.754 -43.456   0.865 -0.12 +0.63    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      41.775 -43.452   2.106 -0.57 -0.61    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      42.481 -42.809   0.082 -0.73 -0.41    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      41.201 -45.846   0.365 -0.46 +0.10    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      41.117 -46.633   1.646 -0.47 +0.11    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      40.494 -46.200   2.663 -0.28 -0.44    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      40.627 -47.085   3.559 -0.33 +0.32    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      41.340 -48.040   3.129 -0.28 -0.51    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.605 -48.889   3.680 -0.42 +0.17    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      41.657 -47.827   1.926 -0.50 +0.17    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 18 of 20
+Run: 18 Seed: 1357091896 1580275530 [ Run 18 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.811
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 39.246 -45.754 2.775 quatxyzw -0.828617 -0.013101 0.154043 0.538045 center 0.117 0.809 -0.212 ntor 4 101.6414 -46.8701 -128.6073 -58.6232
+State:	 39.246 -45.754   2.775  -0.983 -0.016  0.183 114.899    101.64  -46.87 -128.61  -58.62
+
+DOCKED: MODEL       18
+DOCKED: USER    Run = 18
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.22 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  812.97 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.41 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.04 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.36 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.40 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.40 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 39.246429 -45.753554 2.774888
+DOCKED: USER    NEWDPF quaternion0 -0.828617 -0.013101 0.154043 0.538045
+DOCKED: USER    NEWDPF axisangle0 -0.983037 -0.015543 0.182750 114.898648
+DOCKED: USER    NEWDPF quat0 -0.983037 -0.015543 0.182750 114.898648
+DOCKED: USER    NEWDPF dihe0 101.64 -46.87 -128.61 -58.62 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.000 -45.694   1.826 -0.30 +0.08    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      38.871 -45.159   0.931 -0.05 +0.43    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      38.899 -45.594  -0.534 -0.28 -0.11    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      37.559 -45.741   1.472 -0.19 -0.09    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      38.664 -43.646   1.050 -0.08 -0.09    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.134 -46.170   0.962 -0.30 +0.65    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.028 -45.308   0.949 -0.73 -0.65    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      41.119 -47.269   0.369 -0.45 -0.43    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      39.585 -46.808   2.821 -0.37 +0.07    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      40.226 -46.791   4.183 -0.38 +0.08    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      40.655 -45.720   4.712 -0.41 -0.45    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      41.140 -46.054   5.834 -0.37 +0.29    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      41.045 -47.306   5.998 -0.29 -0.37    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.381 -47.831   6.838 -0.40 +0.10    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      40.457 -47.822   5.007 -0.45 +0.12    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 19 of 20
+Run: 19 Seed: 442048387 683788287 [ Run 19 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.375
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 39.799 -44.346 5.057 quatxyzw 0.209180 -0.050899 -0.284676 -0.934137 center 0.117 0.809 -0.212 ntor 4 -97.7989 90.0798 87.2726 -23.7012
+State:	 39.799 -44.346   5.057   0.586 -0.143 -0.798 -41.822    -97.80   90.08   87.27  -23.70
+
+DOCKED: MODEL       19
+DOCKED: USER    Run = 19
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -3.80 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =    1.63 mM (millimolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -4.99 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -4.90 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.09 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.38 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.38 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 39.798662 -44.346353 5.057162
+DOCKED: USER    NEWDPF quaternion0 0.209180 -0.050899 -0.284676 -0.934137
+DOCKED: USER    NEWDPF axisangle0 0.586079 -0.142608 -0.797605 -41.821558
+DOCKED: USER    NEWDPF quat0 0.586079 -0.142608 -0.797605 -41.821558
+DOCKED: USER    NEWDPF dihe0 -97.80 90.08 87.27 -23.70 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.205 -45.467   4.837 -0.36 +0.08    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      38.792 -45.934   4.458 -0.07 +0.41    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      37.653 -44.951   4.729 -0.20 -0.08    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      38.776 -46.120   2.936 -0.23 -0.10    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      38.448 -47.330   4.989 -0.33 -0.09    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      41.073 -46.670   5.087 -0.25 +0.58    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      41.135 -46.882   6.309 -0.48 -0.27    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      41.625 -47.310   4.167 -0.86 -0.50    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      40.282 -44.497   6.044 -0.36 +0.07    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      40.610 -43.057   5.751 -0.39 +0.08    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      41.659 -42.500   6.198 -0.59 -0.38    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      41.624 -41.304   5.785 -0.27 +0.22    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      40.567 -41.101   5.118 -0.20 -0.32    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      40.298 -40.191   4.677 -0.09 +0.09    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      39.901 -42.171   5.038 -0.23 +0.11    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+
+	BEGINNING GENETIC ALGORITHM DOCKING 20 of 20
+Run: 20 Seed: 171275422 1832683162 [ Run 20 of 20 GA/GALS ]
+Beginning LAMARCKIAN GENETIC ALGORITHM (LGA), with a maximum of 2500000 energy evaluations.
+
+Final-Value: -5.791
+
+
+	FINAL GENETIC ALGORITHM DOCKED STATE
+	_______________________________________________
+
+
+Detailed state:  trans 40.178 -45.275 0.927 quatxyzw -0.922806 -0.209695 -0.267247 0.181758 center 0.117 0.809 -0.212 ntor 4 124.4276 -101.4323 -141.6417 -48.3041
+State:	 40.178 -45.275   0.927  -0.938 -0.213 -0.272 159.056    124.43 -101.43 -141.64  -48.30
+
+DOCKED: MODEL       20
+DOCKED: USER    Run = 20
+DOCKED: USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+DOCKED: USER  
+DOCKED: USER    Estimated Free Energy of Binding    =   -4.20 kcal/mol  [=(1)+(2)+(3)-(4)]
+DOCKED: USER    Estimated Inhibition Constant, Ki   =  833.23 uM (micromolar)  [Temperature = 298.15 K]
+DOCKED: USER    
+DOCKED: USER    (1) Final Intermolecular Energy     =   -5.39 kcal/mol
+DOCKED: USER        vdW + Hbond + desolv Energy     =   -5.21 kcal/mol
+DOCKED: USER        Electrostatic Energy            =   -0.19 kcal/mol
+DOCKED: USER    (2) Final Total Internal Energy     =   -0.40 kcal/mol
+DOCKED: USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+DOCKED: USER    (4) Unbound System's Energy  [=(2)] =   -0.40 kcal/mol
+DOCKED: USER    
+DOCKED: USER    
+DOCKED: USER    NEWDPF move lig6.pdbqt
+DOCKED: USER    NEWDPF about 0.117000 0.809000 -0.212000
+DOCKED: USER    NEWDPF tran0 40.178003 -45.275319 0.926827
+DOCKED: USER    NEWDPF quaternion0 -0.922806 -0.209695 -0.267247 0.181758
+DOCKED: USER    NEWDPF axisangle0 -0.938437 -0.213247 -0.271774 159.055648
+DOCKED: USER    NEWDPF quat0 -0.938437 -0.213247 -0.271774 159.055648
+DOCKED: USER    NEWDPF dihe0 124.43 -101.43 -141.64 -48.30 
+DOCKED: USER  keepresnum = 1 
+DOCKED: USER  
+DOCKED: REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig6.pdb
+DOCKED: REMARK  7 active torsions:
+DOCKED: REMARK  status: ('A' for Active; 'I' for Inactive)
+DOCKED: REMARK    1  A    between atoms: _1  and  _5
+DOCKED: REMARK    2  A    between atoms: _1  and  _15
+DOCKED: REMARK    3  A    between atoms: _5  and  _21
+DOCKED: REMARK    4  A    between atoms: _5  and  _28
+DOCKED: REMARK    5  A    between atoms: _13  and  _21
+DOCKED: REMARK    6  A    between atoms: _17  and  _21
+DOCKED: REMARK    7  A    between atoms: _21  and  _22
+DOCKED: REMARK                            x       y       z     vdW  Elec       q    Type
+DOCKED: REMARK                         _______ _______ _______ _____ _____    ______ ____
+DOCKED: USER                              x       y       z     vdW  Elec       q    Type
+DOCKED: USER                           _______ _______ _______ _____ _____    ______ ____
+DOCKED: ROOT
+DOCKED: ATOM      1  C   UNL     1      40.777 -44.221   0.910 -0.23 +0.09    +0.055 C 
+DOCKED: ENDROOT
+DOCKED: BRANCH   8  12
+DOCKED: ATOM      2  N   UNL     1      39.793 -43.649  -0.122 -0.02 +0.45    +0.384 N 
+DOCKED: ATOM      3  C   UNL     1      39.729 -42.126  -0.232 -0.12 -0.09    -0.092 C 
+DOCKED: ATOM      4  C   UNL     1      40.278 -44.107  -1.503 -0.27 -0.12    -0.092 C 
+DOCKED: ATOM      5  C   UNL     1      38.387 -44.251  -0.023 -0.17 -0.09    -0.092 C 
+DOCKED: ENDBRANCH   8  12
+DOCKED: BRANCH   8   9
+DOCKED: ATOM      6  C   UNL     1      42.008 -43.359   0.951 -0.12 +0.66    +0.344 C 
+DOCKED: ATOM      7  O   UNL     1      42.193 -42.966   2.115 -0.70 -0.58    -0.248 OA
+DOCKED: ATOM      8  O   UNL     1      42.694 -43.107  -0.063 -0.75 -0.41    -0.248 OA
+DOCKED: ENDBRANCH   8   9
+DOCKED: BRANCH   8   1
+DOCKED: ATOM      9  C   UNL     1      41.174 -45.704   0.695 -0.45 +0.10    +0.053 C 
+DOCKED: BRANCH   1   2
+DOCKED: ATOM     10  C   UNL     1      41.124 -46.612   1.895 -0.45 +0.12    +0.058 A 
+DOCKED: ATOM     11  N   UNL     1      40.541 -46.275   2.971 -0.38 -0.45    -0.241 NA
+DOCKED: ATOM     12  C   UNL     1      40.694 -47.245   3.771 -0.34 +0.31    +0.196 A 
+DOCKED: ATOM     13  N   UNL     1      41.381 -48.159   3.226 -0.24 -0.49    -0.351 N 
+DOCKED: ATOM     14  H   UNL     1      41.655 -49.060   3.681 -0.43 +0.15    +0.166 HD
+DOCKED: ATOM     15  C   UNL     1      41.659 -47.832   2.038 -0.52 +0.17    +0.107 A 
+DOCKED: ENDBRANCH   1   2
+DOCKED: ENDBRANCH   8   1
+DOCKED: TORSDOF 4
+DOCKED: TER
+DOCKED: ENDMDL
+________________________________________________________________________________
+
+DPF> analysis                             # perform a ranked cluster analysis
+
+
+		CLUSTER ANALYSIS OF CONFORMATIONS
+		_________________________________
+
+Number of conformations = 20
+
+RMSD cluster analysis will be performed using the ligand atoms only (15 / 15 total atoms).
+
+Outputting structurally similar clusters, ranked in order of increasing energy.
+
+
+________________________________________________________________________________
+
+Number of distinct conformational clusters found = 5,  out of 20 runs,
+Using an rmsd-tolerance of 2.0 A
+
+
+	CLUSTERING HISTOGRAM
+	____________________
+
+________________________________________________________________________________
+     |           |     |           |     |                                    
+Clus | Lowest    | Run | Mean      | Num | Histogram                          
+-ter | Binding   |     | Binding   | in  |                                    
+Rank | Energy    |     | Energy    | Clus|    5    10   15   20   25   30   35
+_____|___________|_____|___________|_____|____:____|____:____|____:____|____:___
+   1 |     -4.33 |   3 |     -4.13 |  11 |###########
+   2 |     -4.33 |   9 |     -4.33 |   1 |#
+   3 |     -4.22 |  18 |     -4.13 |   5 |#####
+   4 |     -4.17 |  10 |     -4.08 |   2 |##
+   5 |     -3.80 |  19 |     -3.80 |   1 |#
+_____|___________|_____|___________|_____|______________________________________
+
+
+Number of multi-member conformational clusters found = 3, out of 20 runs.
+
+	RMSD TABLE
+	__________
+
+_____________________________________________________________________
+     |      |      |           |         |                 |
+Rank | Sub- | Run  | Binding   | Cluster | Reference       | Grep
+     | Rank |      | Energy    | RMSD    | RMSD            | Pattern
+_____|______|______|___________|_________|_________________|___________
+   1      1      3       -4.33      0.00     60.82           RANKING
+   1      2     17       -4.22      0.71     60.77           RANKING
+   1      3     11       -4.21      1.02     61.09           RANKING
+   1      4      4       -4.20      0.33     60.75           RANKING
+   1      5     20       -4.20      0.45     60.73           RANKING
+   1      6      2       -4.19      0.95     61.13           RANKING
+   1      7      7       -4.11      0.82     61.00           RANKING
+   1      8     16       -4.04      1.07     60.91           RANKING
+   1      9      5       -4.04      1.04     60.80           RANKING
+   1     10     15       -4.01      1.33     60.87           RANKING
+   1     11     12       -3.88      1.89     61.22           RANKING
+   2      1      9       -4.33      0.00     61.33           RANKING
+   3      1     18       -4.22      0.00     60.97           RANKING
+   3      2      8       -4.14      0.77     61.05           RANKING
+   3      3      6       -4.12      0.74     61.08           RANKING
+   3      4     14       -4.10      0.77     61.05           RANKING
+   3      5      1       -4.09      0.44     60.98           RANKING
+   4      1     10       -4.17      0.00     61.04           RANKING
+   4      2     13       -3.98      1.48     61.27           RANKING
+   5      1     19       -3.80      0.00     59.67           RANKING
+_______________________________________________________________________
+
+
+
+	INFORMATION ENTROPY ANALYSIS FOR THIS CLUSTERING
+	________________________________________________
+
+
+Information entropy for this clustering = 0.40  (rmstol = 2.00 Angstrom)
+
+_______________________________________________________________________
+
+
+	STATISTICAL MECHANICAL ANALYSIS
+	_______________________________
+
+
+Partition function, Q =    20.14            at Temperature, T = 298.15 K
+Free energy,        A ~ -1779.03 kcal/mol   at Temperature, T = 298.15 K
+Internal energy,    U =    -4.12 kcal/mol   at Temperature, T = 298.15 K
+Entropy,            S =     5.95 kcal/mol/K at Temperature, T = 298.15 K
+
+_______________________________________________________________________
+
+
+	LOWEST ENERGY DOCKED CONFORMATION from EACH CLUSTER
+	___________________________________________________
+
+
+
+Keeping original residue number (specified in the input PDBQ file) for outputting.
+
+MODEL        3
+USER    Run = 3
+USER    Cluster Rank = 1
+USER    Number of conformations in this cluster = 11
+USER  
+USER    RMSD from reference structure       = 60.821 A
+USER  
+USER    Estimated Free Energy of Binding    =   -4.33 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =  670.05 uM (micromolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -5.52 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -5.19 kcal/mol
+USER        Electrostatic Energy            =   -0.33 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.39 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.39 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+USER    NEWDPF move	lig6.pdbqt
+USER    NEWDPF about	0.117000 0.809000 -0.212000
+USER    NEWDPF tran0	40.160314 -45.548749 0.956407
+USER    NEWDPF axisangle0	0.925774 0.251541 0.282258 -157.469852
+USER    NEWDPF quaternion0	0.907938 0.246694 0.276820 -0.195348
+USER    NEWDPF dihe0	136.53 5.92 -177.80 -46.78 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C   UNL     1      40.684 -44.456   0.900 -0.25 +0.09    +0.055    60.821
+ATOM      2  N   UNL     1      39.682 -44.003  -0.173 -0.04 +0.46    +0.384    60.821
+ATOM      3  C   UNL     1      40.110 -44.192  -1.628 -0.26 -0.12    -0.092    60.821
+ATOM      4  C   UNL     1      38.439 -44.890  -0.027 -0.24 -0.10    -0.092    60.821
+ATOM      5  C   UNL     1      39.139 -42.590   0.059 -0.09 -0.09    -0.092    60.821
+ATOM      6  C   UNL     1      41.851 -43.508   0.921 -0.12 +0.65    +0.344    60.821
+ATOM      7  O   UNL     1      42.139 -43.241   2.099 -0.62 -0.64    -0.248    60.821
+ATOM      8  O   UNL     1      42.398 -43.084  -0.119 -0.76 -0.40    -0.248    60.821
+ATOM      9  C   UNL     1      41.188 -45.916   0.762 -0.47 +0.10    +0.053    60.821
+ATOM     10  C   UNL     1      41.146 -46.780   1.994 -0.48 +0.11    +0.058    60.821
+ATOM     11  N   UNL     1      41.129 -46.286   3.163 -0.57 -0.61    -0.241    60.821
+ATOM     12  C   UNL     1      41.108 -47.271   3.959 -0.31 +0.35    +0.196    60.821
+ATOM     13  N   UNL     1      41.139 -48.358   3.312 -0.31 -0.44    -0.351    60.821
+ATOM     14  H   UNL     1      41.141 -49.314   3.738 -0.22 +0.16    +0.166    60.821
+ATOM     15  C   UNL     1      41.138 -48.117   2.072 -0.45 +0.14    +0.107    60.821
+TER
+ENDMDL
+MODEL        9
+USER    Run = 9
+USER    Cluster Rank = 2
+USER    Number of conformations in this cluster = 1
+USER  
+USER    RMSD from reference structure       = 61.333 A
+USER  
+USER    Estimated Free Energy of Binding    =   -4.33 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =  674.00 uM (micromolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -5.52 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -5.47 kcal/mol
+USER        Electrostatic Energy            =   -0.04 kcal/mol
+USER    (2) Final Total Internal Energy     =   +0.02 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   +0.02 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+USER    NEWDPF move	lig6.pdbqt
+USER    NEWDPF about	0.117000 0.809000 -0.212000
+USER    NEWDPF tran0	45.230182 -41.682006 1.609662
+USER    NEWDPF axisangle0	0.117822 0.448326 -0.886071 -146.539202
+USER    NEWDPF quaternion0	0.112835 0.429348 -0.848564 -0.287869
+USER    NEWDPF dihe0	173.31 -123.15 -162.78 6.46 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C   UNL     1      44.032 -41.816   1.741 -0.35 +0.07    +0.055    61.333
+ATOM      2  N   UNL     1      44.055 -40.988   3.034 -0.20 +0.37    +0.384    61.333
+ATOM      3  C   UNL     1      42.922 -39.979   3.218 -0.30 -0.07    -0.092    61.333
+ATOM      4  C   UNL     1      43.875 -41.972   4.197 -0.22 -0.15    -0.092    61.333
+ATOM      5  C   UNL     1      45.415 -40.344   3.322 -0.35 -0.02    -0.092    61.333
+ATOM      6  C   UNL     1      42.734 -42.570   1.658 -0.10 +0.66    +0.344    61.333
+ATOM      7  O   UNL     1      42.653 -43.123   0.549 -0.62 -0.45    -0.248    61.333
+ATOM      8  O   UNL     1      41.903 -42.593   2.590 -0.72 -0.50    -0.248    61.333
+ATOM      9  C   UNL     1      45.224 -42.789   1.556 -0.39 +0.08    +0.053    61.333
+ATOM     10  C   UNL     1      46.535 -42.198   1.109 -0.49 +0.04    +0.058    61.333
+ATOM     11  N   UNL     1      46.641 -40.983   0.757 -0.27 -0.07    -0.241    61.333
+ATOM     12  C   UNL     1      47.854 -40.817   0.433 -0.36 +0.03    +0.196    61.333
+ATOM     13  N   UNL     1      48.492 -41.904   0.551 -0.26 -0.09    -0.351    61.333
+ATOM     14  H   UNL     1      49.508 -42.034   0.335 -0.32 -0.02    +0.166    61.333
+ATOM     15  C   UNL     1      47.725 -42.803   0.996 -0.53 +0.08    +0.107    61.333
+TER
+ENDMDL
+MODEL       18
+USER    Run = 18
+USER    Cluster Rank = 3
+USER    Number of conformations in this cluster = 5
+USER  
+USER    RMSD from reference structure       = 60.969 A
+USER  
+USER    Estimated Free Energy of Binding    =   -4.22 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =  812.97 uM (micromolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -5.41 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -5.04 kcal/mol
+USER        Electrostatic Energy            =   -0.36 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.40 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.40 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+USER    NEWDPF move	lig6.pdbqt
+USER    NEWDPF about	0.117000 0.809000 -0.212000
+USER    NEWDPF tran0	39.246429 -45.753554 2.774888
+USER    NEWDPF axisangle0	-0.983037 -0.015543 0.182750 114.898648
+USER    NEWDPF quaternion0	-0.828617 -0.013101 0.154043 0.538045
+USER    NEWDPF dihe0	101.64 -46.87 -128.61 -58.62 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C   UNL     1      40.000 -45.694   1.826 -0.30 +0.08    +0.055    60.969
+ATOM      2  N   UNL     1      38.871 -45.159   0.931 -0.05 +0.43    +0.384    60.969
+ATOM      3  C   UNL     1      38.899 -45.594  -0.534 -0.28 -0.11    -0.092    60.969
+ATOM      4  C   UNL     1      37.559 -45.741   1.472 -0.19 -0.09    -0.092    60.969
+ATOM      5  C   UNL     1      38.664 -43.646   1.050 -0.08 -0.09    -0.092    60.969
+ATOM      6  C   UNL     1      41.134 -46.170   0.962 -0.30 +0.65    +0.344    60.969
+ATOM      7  O   UNL     1      42.028 -45.308   0.949 -0.73 -0.65    -0.248    60.969
+ATOM      8  O   UNL     1      41.119 -47.269   0.369 -0.45 -0.43    -0.248    60.969
+ATOM      9  C   UNL     1      39.585 -46.808   2.821 -0.37 +0.07    +0.053    60.969
+ATOM     10  C   UNL     1      40.226 -46.791   4.183 -0.38 +0.08    +0.058    60.969
+ATOM     11  N   UNL     1      40.655 -45.720   4.712 -0.41 -0.45    -0.241    60.969
+ATOM     12  C   UNL     1      41.140 -46.054   5.834 -0.37 +0.29    +0.196    60.969
+ATOM     13  N   UNL     1      41.045 -47.306   5.998 -0.29 -0.37    -0.351    60.969
+ATOM     14  H   UNL     1      41.381 -47.831   6.838 -0.40 +0.10    +0.166    60.969
+ATOM     15  C   UNL     1      40.457 -47.822   5.007 -0.45 +0.12    +0.107    60.969
+TER
+ENDMDL
+MODEL       10
+USER    Run = 10
+USER    Cluster Rank = 4
+USER    Number of conformations in this cluster = 2
+USER  
+USER    RMSD from reference structure       = 61.036 A
+USER  
+USER    Estimated Free Energy of Binding    =   -4.17 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =  871.11 uM (micromolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -5.37 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -5.07 kcal/mol
+USER        Electrostatic Energy            =   -0.30 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.36 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.36 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+USER    NEWDPF move	lig6.pdbqt
+USER    NEWDPF about	0.117000 0.809000 -0.212000
+USER    NEWDPF tran0	38.807489 -46.157989 2.368639
+USER    NEWDPF axisangle0	-0.796078 0.444940 -0.410229 -60.448107
+USER    NEWDPF quaternion0	-0.400732 0.223975 -0.206502 -0.864064
+USER    NEWDPF dihe0	115.28 -59.19 121.91 -92.01 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C   UNL     1      39.530 -47.035   2.794 -0.38 +0.07    +0.055    61.036
+ATOM      2  N   UNL     1      38.641 -47.200   4.036 -0.11 +0.38    +0.384    61.036
+ATOM      3  C   UNL     1      39.293 -47.839   5.261 -0.43 -0.09    -0.092    61.036
+ATOM      4  C   UNL     1      38.260 -45.790   4.504 -0.24 -0.09    -0.092    61.036
+ATOM      5  C   UNL     1      37.287 -47.851   3.734 -0.32 -0.08    -0.092    61.036
+ATOM      6  C   UNL     1      40.855 -47.700   3.041 -0.36 +0.51    +0.344    61.036
+ATOM      7  O   UNL     1      40.982 -48.659   2.262 -0.51 -0.28    -0.248    61.036
+ATOM      8  O   UNL     1      41.658 -47.307   3.913 -0.87 -0.52    -0.248    61.036
+ATOM      9  C   UNL     1      39.748 -45.573   2.326 -0.26 +0.08    +0.053    61.036
+ATOM     10  C   UNL     1      40.540 -45.364   1.062 -0.29 +0.10    +0.058    61.036
+ATOM     11  N   UNL     1      41.809 -45.357   1.055 -0.71 -0.61    -0.241    61.036
+ATOM     12  C   UNL     1      42.152 -45.147  -0.146 -0.30 +0.39    +0.196    61.036
+ATOM     13  N   UNL     1      41.127 -44.998  -0.875 -0.13 -0.56    -0.351    61.036
+ATOM     14  H   UNL     1      41.141 -44.804  -1.903 +0.09 +0.27    +0.166    61.036
+ATOM     15  C   UNL     1      40.083 -45.149  -0.180 -0.26 +0.15    +0.107    61.036
+TER
+ENDMDL
+MODEL       19
+USER    Run = 19
+USER    Cluster Rank = 5
+USER    Number of conformations in this cluster = 1
+USER  
+USER    RMSD from reference structure       = 59.670 A
+USER  
+USER    Estimated Free Energy of Binding    =   -3.80 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =    1.63 mM (millimolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =   -4.99 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -4.90 kcal/mol
+USER        Electrostatic Energy            =   -0.09 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.38 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.38 kcal/mol
+USER    
+USER    
+USER  
+USER    DPF = C:/Users/Asus/DOCKING/result_6.dpf
+USER    NEWDPF move	lig6.pdbqt
+USER    NEWDPF about	0.117000 0.809000 -0.212000
+USER    NEWDPF tran0	39.798662 -44.346353 5.057162
+USER    NEWDPF axisangle0	0.586079 -0.142608 -0.797605 -41.821558
+USER    NEWDPF quaternion0	0.209180 -0.050899 -0.284676 -0.934137
+USER    NEWDPF dihe0	-97.80 90.08 87.27 -23.70 
+USER  
+USER                              x       y       z    vdW   Elec        q     RMS 
+ATOM      1  C   UNL     1      40.205 -45.467   4.837 -0.36 +0.08    +0.055    59.670
+ATOM      2  N   UNL     1      38.792 -45.934   4.458 -0.07 +0.41    +0.384    59.670
+ATOM      3  C   UNL     1      37.653 -44.951   4.729 -0.20 -0.08    -0.092    59.670
+ATOM      4  C   UNL     1      38.776 -46.120   2.936 -0.23 -0.10    -0.092    59.670
+ATOM      5  C   UNL     1      38.448 -47.330   4.989 -0.33 -0.09    -0.092    59.670
+ATOM      6  C   UNL     1      41.073 -46.670   5.087 -0.25 +0.58    +0.344    59.670
+ATOM      7  O   UNL     1      41.135 -46.882   6.309 -0.48 -0.27    -0.248    59.670
+ATOM      8  O   UNL     1      41.625 -47.310   4.167 -0.86 -0.50    -0.248    59.670
+ATOM      9  C   UNL     1      40.282 -44.497   6.044 -0.36 +0.07    +0.053    59.670
+ATOM     10  C   UNL     1      40.610 -43.057   5.751 -0.39 +0.08    +0.058    59.670
+ATOM     11  N   UNL     1      41.659 -42.500   6.198 -0.59 -0.38    -0.241    59.670
+ATOM     12  C   UNL     1      41.624 -41.304   5.785 -0.27 +0.22    +0.196    59.670
+ATOM     13  N   UNL     1      40.567 -41.101   5.118 -0.20 -0.32    -0.351    59.670
+ATOM     14  H   UNL     1      40.298 -40.191   4.677 -0.09 +0.09    +0.166    59.670
+ATOM     15  C   UNL     1      39.901 -42.171   5.038 -0.23 +0.11    +0.107    59.670
+TER
+ENDMDL
+
+
+AVSFLD: # AVS field file
+AVSFLD: #
+AVSFLD: # Created by AutoDock
+AVSFLD: #
+AVSFLD: ndim=2           # number of dimensions in the field
+AVSFLD: nspace=1         # number of physical coordinates
+AVSFLD: veclen=7         # vector size
+AVSFLD: dim1=15          # atoms
+AVSFLD: dim2=5           # conformations
+AVSFLD: data=Real       # data type (byte,integer,Real,double)
+AVSFLD: field=uniform    # field coordinate layout
+AVSFLD: label= x y z vdW Elec q RMS
+AVSFLD: variable 1 file = C:/Users/Asus/DOCKING/result_6.dlg.pdb filetype = ascii offset = 5 stride = 12
+AVSFLD: variable 2 file = C:/Users/Asus/DOCKING/result_6.dlg.pdb filetype = ascii offset = 6 stride = 12
+AVSFLD: variable 3 file = C:/Users/Asus/DOCKING/result_6.dlg.pdb filetype = ascii offset = 7 stride = 12
+AVSFLD: variable 4 file = C:/Users/Asus/DOCKING/result_6.dlg.pdb filetype = ascii offset = 8 stride = 12
+AVSFLD: variable 5 file = C:/Users/Asus/DOCKING/result_6.dlg.pdb filetype = ascii offset = 9 stride = 12
+AVSFLD: variable 6 file = C:/Users/Asus/DOCKING/result_6.dlg.pdb filetype = ascii offset = 10 stride = 12
+AVSFLD: variable 7 file = C:/Users/Asus/DOCKING/result_6.dlg.pdb filetype = ascii offset = 11 stride = 12
+AVSFLD: # end of file
+
+>>> Closing the docking parameter file (DPF)...
+This docking finished at:			9:21 23" p.m., 12/20/2021
+
+
+________________________________________________________________________________
+
+C:/Users/Asus/DOCKING/autodock4.exe: Successful Completion on "DESKTOP-RHKS8OI"
+
+Real= 6m 08.84s,  CPU= 6m 07.49s,  System= 0.01s
+________________________________________________________________________________
+
