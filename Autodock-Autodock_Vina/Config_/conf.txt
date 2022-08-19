@@ -1,0 +1,28 @@
+receptor= receptor.pdbqt
+ligand= lig7.pdbqt
+
+
+
+center_x= 47.667
+
+center_y= -44.684
+
+center_z= 5.787
+
+
+
+size_x= 40
+
+size_y= 40
+
+size_z= 40
+
+
+
+out= docking_receptor7.pdbqt
+
+log= vinatest7.txt
+
+
+
+exhaustiveness= 8
