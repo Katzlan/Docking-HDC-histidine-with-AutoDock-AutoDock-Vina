@@ -1,0 +1,297 @@
+MODEL 1
+REMARK VINA RESULT:      -4.8      0.000      0.000
+REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig4.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: _1  and  _3
+REMARK    2  A    between atoms: _1  and  _12
+REMARK    3  A    between atoms: _3  and  _6
+REMARK    4  A    between atoms: _14  and  _18
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      5  C   UNL     1      43.790 -41.394   3.788  0.00  0.00    +0.093 C 
+ATOM      6  C   UNL     1      43.953 -41.423   2.453  0.00  0.00    +0.036 C 
+ENDROOT
+BRANCH   6   7
+ATOM      7  C   UNL     1      45.151 -41.528   1.855  0.00  0.00    +0.082 A 
+ATOM      8  N   UNL     1      46.159 -40.780   2.037  0.00  0.00    -0.237 NA
+ATOM      9  C   UNL     1      47.071 -41.226   1.283  0.00  0.00    +0.197 A 
+ATOM     10  N   UNL     1      46.685 -42.235   0.623  0.00  0.00    -0.350 N 
+ATOM     11  H   UNL     1      47.253 -42.779  -0.065  0.00  0.00    +0.166 HD
+ATOM     12  C   UNL     1      45.483 -42.464   0.949  0.00  0.00    +0.111 A 
+ENDBRANCH   6   7
+BRANCH   5   1
+ATOM      1  C   UNL     1      42.591 -41.286   4.428  0.00  0.00    +0.332 C 
+ATOM      2  O   UNL     1      41.873 -40.322   4.245  0.00  0.00    -0.246 OA
+BRANCH   1   3
+ATOM      3  O   UNL     1      42.202 -42.284   5.287  0.00  0.00    -0.465 OA
+ATOM      4  C   UNL     1      40.837 -42.629   5.336  0.00  0.00    +0.280 C 
+ENDBRANCH   1   3
+ENDBRANCH   5   1
+TORSDOF 3
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -4.6     22.880     23.439
+REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig4.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: _1  and  _3
+REMARK    2  A    between atoms: _1  and  _12
+REMARK    3  A    between atoms: _3  and  _6
+REMARK    4  A    between atoms: _14  and  _18
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      5  C   UNL     1      57.286 -25.473  13.970  0.00  0.00    +0.093 C 
+ATOM      6  C   UNL     1      55.998 -25.861  13.981  0.00  0.00    +0.036 C 
+ENDROOT
+BRANCH   6   7
+ATOM      7  C   UNL     1      54.970 -25.017  13.797  0.00  0.00    +0.082 A 
+ATOM      8  N   UNL     1      54.928 -24.034  12.997  0.00  0.00    -0.237 NA
+ATOM      9  C   UNL     1      53.785 -23.511  13.140  0.00  0.00    +0.197 A 
+ATOM     10  N   UNL     1      53.090 -24.124  14.002  0.00  0.00    -0.350 N 
+ATOM     11  H   UNL     1      52.117 -23.885  14.297  0.00  0.00    +0.166 HD
+ATOM     12  C   UNL     1      53.794 -25.080  14.445  0.00  0.00    +0.111 A 
+ENDBRANCH   6   7
+BRANCH   5   1
+ATOM      1  C   UNL     1      58.354 -26.301  14.155  0.00  0.00    +0.332 C 
+ATOM      2  O   UNL     1      58.527 -26.865  15.218  0.00  0.00    -0.246 OA
+BRANCH   1   3
+ATOM      3  O   UNL     1      59.237 -26.491  13.120  0.00  0.00    -0.465 OA
+ATOM      4  C   UNL     1      59.928 -27.716  13.049  0.00  0.00    +0.280 C 
+ENDBRANCH   1   3
+ENDBRANCH   5   1
+TORSDOF 3
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -4.5     18.534     19.434
+REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig4.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: _1  and  _3
+REMARK    2  A    between atoms: _1  and  _12
+REMARK    3  A    between atoms: _3  and  _6
+REMARK    4  A    between atoms: _14  and  _18
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      5  C   UNL     1      63.013 -40.935  -1.252  0.00  0.00    +0.093 C 
+ATOM      6  C   UNL     1      62.530 -40.962   0.003  0.00  0.00    +0.036 C 
+ENDROOT
+BRANCH   6   7
+ATOM      7  C   UNL     1      63.242 -40.587   1.078  0.00  0.00    +0.082 A 
+ATOM      8  N   UNL     1      64.506 -40.518   1.166  0.00  0.00    -0.237 NA
+ATOM      9  C   UNL     1      64.757 -40.124   2.341  0.00  0.00    +0.197 A 
+ATOM     10  N   UNL     1      63.700 -39.936   3.012  0.00  0.00    -0.350 N 
+ATOM     11  H   UNL     1      63.645 -39.612   4.003  0.00  0.00    +0.166 HD
+ATOM     12  C   UNL     1      62.720 -40.214   2.259  0.00  0.00    +0.111 A 
+ENDBRANCH   6   7
+BRANCH   5   1
+ATOM      1  C   UNL     1      62.320 -41.310  -2.366  0.00  0.00    +0.332 C 
+ATOM      2  O   UNL     1      62.115 -40.519  -3.265  0.00  0.00    -0.246 OA
+BRANCH   1   3
+ATOM      3  O   UNL     1      61.854 -42.599  -2.458  0.00  0.00    -0.465 OA
+ATOM      4  C   UNL     1      60.807 -42.867  -3.361  0.00  0.00    +0.280 C 
+ENDBRANCH   1   3
+ENDBRANCH   5   1
+TORSDOF 3
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -4.5     19.652     20.159
+REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig4.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: _1  and  _3
+REMARK    2  A    between atoms: _1  and  _12
+REMARK    3  A    between atoms: _3  and  _6
+REMARK    4  A    between atoms: _14  and  _18
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      5  C   UNL     1      33.354 -51.042 -11.003  0.00  0.00    +0.093 C 
+ATOM      6  C   UNL     1      34.241 -50.286 -11.675  0.00  0.00    +0.036 C 
+ENDROOT
+BRANCH   6   7
+ATOM      7  C   UNL     1      35.308 -50.789 -12.315  0.00  0.00    +0.082 A 
+ATOM      8  N   UNL     1      35.786 -51.958 -12.191  0.00  0.00    -0.237 NA
+ATOM      9  C   UNL     1      36.783 -52.016 -12.968  0.00  0.00    +0.197 A 
+ATOM     10  N   UNL     1      36.962 -50.927 -13.587  0.00  0.00    -0.350 N 
+ATOM     11  H   UNL     1      37.717 -50.726 -14.281  0.00  0.00    +0.166 HD
+ATOM     12  C   UNL     1      36.059 -50.123 -13.209  0.00  0.00    +0.111 A 
+ENDBRANCH   6   7
+BRANCH   5   1
+ATOM      1  C   UNL     1      32.261 -50.564 -10.341  0.00  0.00    +0.332 C 
+ATOM      2  O   UNL     1      32.388 -49.826  -9.384  0.00  0.00    -0.246 OA
+BRANCH   1   3
+ATOM      3  O   UNL     1      31.009 -50.930 -10.770  0.00  0.00    -0.465 OA
+ATOM      4  C   UNL     1      30.910 -51.818 -11.859  0.00  0.00    +0.280 C 
+ENDBRANCH   1   3
+ENDBRANCH   5   1
+TORSDOF 3
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -4.4      5.628      6.719
+REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig4.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: _1  and  _3
+REMARK    2  A    between atoms: _1  and  _12
+REMARK    3  A    between atoms: _3  and  _6
+REMARK    4  A    between atoms: _14  and  _18
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      5  C   UNL     1      40.045 -45.081   5.104  0.00  0.00    +0.093 C 
+ATOM      6  C   UNL     1      40.344 -43.896   5.664  0.00  0.00    +0.036 C 
+ENDROOT
+BRANCH   6   7
+ATOM      7  C   UNL     1      39.795 -42.734   5.276  0.00  0.00    +0.082 A 
+ATOM      8  N   UNL     1      38.573 -42.523   5.009  0.00  0.00    -0.237 NA
+ATOM      9  C   UNL     1      38.487 -41.303   4.688  0.00  0.00    +0.197 A 
+ATOM     10  N   UNL     1      39.610 -40.721   4.740  0.00  0.00    -0.350 N 
+ATOM     11  H   UNL     1      39.798 -39.717   4.520  0.00  0.00    +0.166 HD
+ATOM     12  C   UNL     1      40.465 -41.581   5.105  0.00  0.00    +0.111 A 
+ENDBRANCH   6   7
+BRANCH   5   1
+ATOM      1  C   UNL     1      40.584 -46.279   5.471  0.00  0.00    +0.332 C 
+ATOM      2  O   UNL     1      41.661 -46.330   6.032  0.00  0.00    -0.246 OA
+BRANCH   1   3
+ATOM      3  O   UNL     1      39.892 -47.433   5.197  0.00  0.00    -0.465 OA
+ATOM      4  C   UNL     1      38.591 -47.323   4.670  0.00  0.00    +0.280 C 
+ENDBRANCH   1   3
+ENDBRANCH   5   1
+TORSDOF 3
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -4.3     22.673     23.287
+REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig4.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: _1  and  _3
+REMARK    2  A    between atoms: _1  and  _12
+REMARK    3  A    between atoms: _3  and  _6
+REMARK    4  A    between atoms: _14  and  _18
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      5  C   UNL     1      57.701 -26.597  13.872  0.00  0.00    +0.093 C 
+ATOM      6  C   UNL     1      59.046 -26.611  13.835  0.00  0.00    +0.036 C 
+ENDROOT
+BRANCH   6   7
+ATOM      7  C   UNL     1      59.770 -27.729  13.667  0.00  0.00    +0.082 A 
+ATOM      8  N   UNL     1      60.340 -28.409  14.575  0.00  0.00    -0.237 NA
+ATOM      9  C   UNL     1      60.908 -29.375  13.988  0.00  0.00    +0.197 A 
+ATOM     10  N   UNL     1      60.723 -29.341  12.736  0.00  0.00    -0.350 N 
+ATOM     11  H   UNL     1      61.090 -30.026  12.038  0.00  0.00    +0.166 HD
+ATOM     12  C   UNL     1      60.012 -28.323  12.486  0.00  0.00    +0.111 A 
+ENDBRANCH   6   7
+BRANCH   5   1
+ATOM      1  C   UNL     1      56.934 -25.482  14.042  0.00  0.00    +0.332 C 
+ATOM      2  O   UNL     1      57.442 -24.419  14.343  0.00  0.00    -0.246 OA
+BRANCH   1   3
+ATOM      3  O   UNL     1      55.576 -25.574  13.869  0.00  0.00    -0.465 OA
+ATOM      4  C   UNL     1      54.874 -24.421  13.468  0.00  0.00    +0.280 C 
+ENDBRANCH   1   3
+ENDBRANCH   5   1
+TORSDOF 3
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -4.3     22.636     23.423
+REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig4.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: _1  and  _3
+REMARK    2  A    between atoms: _1  and  _12
+REMARK    3  A    between atoms: _3  and  _6
+REMARK    4  A    between atoms: _14  and  _18
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      5  C   UNL     1      56.002 -24.967  13.828  0.00  0.00    +0.093 C 
+ATOM      6  C   UNL     1      56.735 -26.094  13.877  0.00  0.00    +0.036 C 
+ENDROOT
+BRANCH   6   7
+ATOM      7  C   UNL     1      58.076 -26.103  13.922  0.00  0.00    +0.082 A 
+ATOM      8  N   UNL     1      58.847 -26.985  13.434  0.00  0.00    -0.237 NA
+ATOM      9  C   UNL     1      60.026 -26.610  13.698  0.00  0.00    +0.197 A 
+ATOM     10  N   UNL     1      60.041 -25.517  14.337  0.00  0.00    -0.350 N 
+ATOM     11  H   UNL     1      60.888 -25.006  14.669  0.00  0.00    +0.166 HD
+ATOM     12  C   UNL     1      58.837 -25.159  14.502  0.00  0.00    +0.111 A 
+ENDBRANCH   6   7
+BRANCH   5   1
+ATOM      1  C   UNL     1      54.640 -24.920  13.780  0.00  0.00    +0.332 C 
+ATOM      2  O   UNL     1      53.970 -25.400  14.673  0.00  0.00    -0.246 OA
+BRANCH   1   3
+ATOM      3  O   UNL     1      54.031 -24.321  12.705  0.00  0.00    -0.465 OA
+ATOM      4  C   UNL     1      54.011 -22.914  12.647  0.00  0.00    +0.280 C 
+ENDBRANCH   1   3
+ENDBRANCH   5   1
+TORSDOF 3
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -4.2     15.036     16.732
+REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig4.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: _1  and  _3
+REMARK    2  A    between atoms: _1  and  _12
+REMARK    3  A    between atoms: _3  and  _6
+REMARK    4  A    between atoms: _14  and  _18
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      5  C   UNL     1      34.462 -55.401   5.856  0.00  0.00    +0.093 C 
+ATOM      6  C   UNL     1      35.293 -55.271   6.907  0.00  0.00    +0.036 C 
+ENDROOT
+BRANCH   6   7
+ATOM      7  C   UNL     1      36.115 -54.223   7.075  0.00  0.00    +0.082 A 
+ATOM      8  N   UNL     1      37.363 -54.192   6.850  0.00  0.00    -0.237 NA
+ATOM      9  C   UNL     1      37.746 -53.022   7.138  0.00  0.00    +0.197 A 
+ATOM     10  N   UNL     1      36.789 -52.298   7.540  0.00  0.00    -0.350 N 
+ATOM     11  H   UNL     1      36.850 -51.299   7.836  0.00  0.00    +0.166 HD
+ATOM     12  C   UNL     1      35.741 -53.010   7.517  0.00  0.00    +0.111 A 
+ENDBRANCH   6   7
+BRANCH   5   1
+ATOM      1  C   UNL     1      33.616 -56.451   5.652  0.00  0.00    +0.332 C 
+ATOM      2  O   UNL     1      33.131 -57.049   6.593  0.00  0.00    -0.246 OA
+BRANCH   1   3
+ATOM      3  O   UNL     1      33.317 -56.826   4.366  0.00  0.00    -0.465 OA
+ATOM      4  C   UNL     1      33.796 -56.027   3.310  0.00  0.00    +0.280 C 
+ENDBRANCH   1   3
+ENDBRANCH   5   1
+TORSDOF 3
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -4.2     18.984     20.461
+REMARK  Name = C:\Users\Asus\OneDrive\Рабочий стол\dz3\ligands\Lig4.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: _1  and  _3
+REMARK    2  A    between atoms: _1  and  _12
+REMARK    3  A    between atoms: _3  and  _6
+REMARK    4  A    between atoms: _14  and  _18
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      5  C   UNL     1      54.373 -35.059 -12.777  0.00  0.00    +0.093 C 
+ATOM      6  C   UNL     1      55.634 -35.382 -12.435  0.00  0.00    +0.036 C 
+ENDROOT
+BRANCH   6   7
+ATOM      7  C   UNL     1      56.706 -35.061 -13.176  0.00  0.00    +0.082 A 
+ATOM      8  N   UNL     1      56.993 -33.916 -13.643  0.00  0.00    -0.237 NA
+ATOM      9  C   UNL     1      58.079 -34.055 -14.275  0.00  0.00    +0.197 A 
+ATOM     10  N   UNL     1      58.503 -35.247 -14.230  0.00  0.00    -0.350 N 
+ATOM     11  H   UNL     1      59.375 -35.611 -14.674  0.00  0.00    +0.166 HD
+ATOM     12  C   UNL     1      57.672 -35.918 -13.549  0.00  0.00    +0.111 A 
+ENDBRANCH   6   7
+BRANCH   5   1
+ATOM      1  C   UNL     1      53.261 -35.370 -12.050  0.00  0.00    +0.332 C 
+ATOM      2  O   UNL     1      52.877 -36.520 -11.964  0.00  0.00    -0.246 OA
+BRANCH   1   3
+ATOM      3  O   UNL     1      52.577 -34.363 -11.416  0.00  0.00    -0.465 OA
+ATOM      4  C   UNL     1      51.284 -34.043 -11.873  0.00  0.00    +0.280 C 
+ENDBRANCH   1   3
+ENDBRANCH   5   1
+TORSDOF 3
+ENDMDL
